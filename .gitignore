@@ -10,3 +10,4 @@ examples/
 internal_docs
 build.sh
 output/
+.vs/
