@@ -696,9 +696,24 @@ bool download_JSON() {
   printf("\nAttempting to download JSON...\n");
 
   remove("/TIKdevil/horns.json.tmp");
-  FILE *oh = fopen("/TIKdevil/horns.json.tmp", "wb");
+    FILE *oh;
+    oh=fopen("/TIKdevil/horns.json.tmp", "wb");
+    
+    try {
+      DownloadFile(JSON_URL, oh, false);
+      fclose(oh);
+      remove("/TIKdevil/horns.json");
+      rename("/TIKdevil/horns.json.tmp", "/TIKdevil/horns.json");
+      
+    } catch (...) {
+      printf("Failed to download JSON");
+      return false;
+    }
+    
+    return true;
 
-  if (oh) {
+  /*
+    if (oh) {
 	Result res = DownloadFile(JSON_URL, oh, false);
 	int size = ftell(oh);
 	fclose(oh);
@@ -708,9 +723,9 @@ bool download_JSON() {
 	  return true;
 	}
   }
+  */
 
-  printf("Failed to download JSON");
-  return false;
+  
 }
 
 bool check_JSON(bool forceUpdate = true) {
