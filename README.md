@@ -17,9 +17,9 @@ Fastest batch TIKs (eShop TIcKets) maker and installer on the planet, right on y
 - More speeding and stuff :smile_cat: 
 
 # Building
-LibCTRU v.1.1.0 or higher is required, this version is not installed with devkitPro by default. This must be compiled, the lazy can look at my fork.
+LibCTRU v.1.1.0 or higher is required. The latest release can be found at https://github.com/smealum/ctrulib/releases/latest
 
-The bt folder contains buildtools for the 3ds, up to date as of 5/29/2016.
+The bt folder contains buildtools for the 3ds, up to date as of the 16th of May 2017.
 
 The code in my fork has been modified to compile with a standard devkitPro Windows environment, excepting changes above. Run make and magic happens.
 
