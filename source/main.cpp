@@ -445,7 +445,7 @@ void action_about(gfxScreen_t screen)
 	printf("	Generate only missing tickets\n");
 	printf("	and directly install them!\n\n\n");
 	printf(CONSOLE_BLUE "  Special thanks to:\n\n" CONSOLE_RESET);
-	printf("	cearp, Drakia, steveice10, Mmcx125,\n	and DanTheMan827.\n" CONSOLE_RESET);
+	printf("	cearp, Drakia, steveice10, Mmcx125,\n	DanTheMan827 and TwistedBlizzard.\n" CONSOLE_RESET);
 	printf("\n\n  Commit: " REVISION_STRING);
 
     consoleSelect(currentConsole);
